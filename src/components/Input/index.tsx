@@ -48,7 +48,9 @@ const Input: React.FC<InputProps> = ({ name, icon: Icon, ...rest}) =>  {
             onBlur={handleInputblur}
             defaultValue={defaultValue}
             ref={inputRef}
-            {...rest}/>
+            {...rest}
+         />
+         {error}
         </Container>
 
     );
